@@ -1,0 +1,260 @@
+:root {
+
+    --transition-sm: all .2s ease-in-out;
+    --transition-md: all .3s ease-in-out;
+    --transition-lg: all .5s ease-in-out;
+    --body-color: rgb(27, 27, 27);
+    --dark-gray: rgba(58, 57, 57, 0.301);
+    --lighter-gray: rgba(94, 93, 93, 0.301);
+    --pink-color: rgb(211, 119, 137);
+}
+
+.middle {
+    position: absolute;
+    background-color: transparent;
+    height: 100vh;
+    width: 100%;
+    left:1500px ;
+    transition: var(--transition-lg);
+}
+
+.about-me.change-middle,
+.home.change-middle,
+.services.change-middle,
+.portfolio.change-middle,
+.contact-me.change-middle {
+    left: 90px;
+    width: 75%;
+}
+.about-me-container,
+.services-container,
+.portfolio-container,
+.contact-me-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding-bottom: 50px;
+}
+
+.personal-info {
+    display: flex;
+    max-height: fit-content;
+    gap: 20px;
+}
+
+.infomations{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.information-part{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    width: 100%;
+}
+
+.information-btn{
+    margin-bottom: 40px;
+}
+
+.information-part div{
+    width: 100%;
+    line-height: 50px;
+    border-bottom: 1px solid var(--lighter-gray);
+}
+
+.information-part div span {
+    font-weight: bold;
+}
+
+.information-btn{
+    width: 50%;
+}
+
+.my-skills {
+    width: 60%;
+}
+
+.my-skills div{
+   width: 100%;
+   line-height: 50px;
+   position: relative;
+}
+
+.my-skills div .bottom-line{
+    width: 100%;
+    height: 10px;
+    background-color: var(--lighter-gray);
+    border-radius: 10px;
+}
+
+.color-line {
+    position: absolute;
+    top: 0;
+    height: 10px;
+    border-top-right-radius: 10px;
+    border-radius: 10px;
+}
+
+.html {
+    width: 93%;
+}
+
+.css {
+    width: 80%;
+}
+
+.javascript {
+    width: 40%;
+}
+
+.react{
+    width: 7%;
+}
+
+.more-info-education-experience {
+    display: flex;
+    gap: 40px;
+}
+
+.education {
+    padding: 10px;
+    background-color: var(--dark-gray);
+    position: relative;
+    border-radius: 10px;
+    width: 50%;
+   
+}
+
+.education-content{
+   display: flex;
+   line-height: 20px;
+   flex-direction: column;
+   gap: 30px;
+   padding-right: 10px;
+   margin-right: 0px;
+   border-right: 2px solid var(--pink-color);
+}
+
+.border-color {
+    border-color:var(--pink-color);
+}
+
+/* .column-line{
+    position: absolute;
+    top: 50px;
+    bottom: 50px;
+    right: 10px;
+    width: 2px;
+    height: 100%;
+} */
+
+.circle{
+    position: absolute;
+    right: 3px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50px;
+    z-index: 5;
+}
+
+.icon {
+    margin:0 10px ;
+}
+
+
+
+
+/*======== make responsive website ========*/
+
+
+ @media(max-width:1024px){
+    .about-me.change-middle,
+        .home.change-middle,
+        .services.change-middle,
+        .portfolio.change-middle,
+        .contact-me.change-middle {
+            left: 100px;
+            width: 66%;
+        }
+ }
+
+ @media(min-width:1024px){
+    .about-me.change-middle,
+        .home.change-middle,
+        .services.change-middle,
+        .portfolio.change-middle,
+        .contact-me.change-middle {
+            left: 31px;
+            width: 75%;
+        }
+ }
+
+ @media (max-width:950px) {
+
+    .about-me.change-middle,
+    .home.change-middle,
+    .services.change-middle,
+    .portfolio.change-middle,
+    .contact-me.change-middle {
+            left: 0px;
+            width: 71%;
+        }
+
+    .home-container {
+                    display: flex;
+                    flex-direction: column;
+                }
+
+    .home-content {
+             padding: 0;
+         }
+   
+   .image {
+       margin: 0;
+       width: 75%;
+   }
+
+   .infomations {
+       width: 100%;
+   }
+
+   .personal-info {
+    flex-direction: column;
+    width: 100%;
+    }
+
+    .my-skills {
+             width: 99%;
+         }
+
+    .more-info-education-experience {
+            flex-direction: column;
+        }
+
+.education {
+    width: 99%;
+}
+
+ }
+
+ @media (max-width: 768px) {
+    .about-me.change-middle,
+        .home.change-middle,
+        .services.change-middle,
+        .portfolio.change-middle,
+        .contact-me.change-middle {
+            left: 0px;
+            width: 100%;
+        }
+
+.image {
+    width: 90%;
+}
+
+ }
+
+
+ 

@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>رزومه و نمونه کار</title>
+    <link rel="stylesheet" href="./style.css" />
+    <!-- goolge font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&family=Montserrat:ital,wght@0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800;1,900&family=Neonderthaw&family=Source+Sans+Pro:ital,wght@0,600;0,700;0,900;1,400;1,600;1,700;1,900&family=Tajawal:wght@500;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- about css link -->
+    <link rel="stylesheet" href="./about.css" />
+    <!-- services css link -->
+    <link rel="stylesheet" href="./services.css" />
+    <!-- portfolio css link -->
+    <link rel="stylesheet" href="./portfolio.css" />
+    <!-- contact-me css link -->
+    <link rel="stylesheet" href="./contact-me.css" />
+  </head>
+  <body>
+    <!-- main part -->
+    <div class="main">
+      <div class="main-container">
+        <!-- links part -->
+        <div class="links section-p1" id="links">
+          <div class="logo">
+            <div class="my-logo">
+              <span class="color-txt">s.barati</span>
+              <div class="before-logo border-color"></div>
+              <div class="after-logo border-color"></div>
+            </div>
+          </div>
+          <div class="close-icon">
+             <ion-icon name="close-outline" onclick="sideBarToggle()"></ion-icon>
+          </div>
+          <ul class="list-items">
+            <li>
+              <a href="#" class="item active-link" id="home">
+                <span class="text-item">صفحه اصلی</span>
+                <ion-icon name="home-outline" class="icon"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="item" id="about-me">
+                <span class="text-item">درباره من</span>
+                <ion-icon name="person-outline"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="item" id="services">
+                <span class="text-item"> خدمات</span>
+                <ion-icon name="list-outline" class="icon"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="item" id="portfolio">
+                <span class="text-item">نمونه کار</span>
+                <ion-icon name="id-card-outline" class="icon"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="item" id="contact-me">
+                <span class="text-item">ارتباط بامن</span>
+                <ion-icon name="chatbubbles-outline" class="icon"></ion-icon>
+              </a>
+            </li>
+          </ul>
+          
+        </div>
+
+        <!-- mobile mode link -->
+         <div class="side-bar" id="side-bar">
+          <div class="sibebar-icon" >
+            <ion-icon name="reorder-three-outline" onclick="sideBarToggle()"></ion-icon>
+          </div>
+          <div class="logo">
+            <div class="my-logo">
+              <span class="color-txt">s.barati</span>
+              <div class="before-logo border-color"></div>
+              <div class="after-logo border-color"></div>
+            </div>
+          </div>
+          </div>
+        <!-- home part -->
+        <div class="middle home change-middle" data-id="home">
+          <div class="home-container section-p1">
+            <div class="home-content">
+              <div class="interduce">
+                <h2 class="name">
+                  سلام ، من
+                  <span class="my-name color-txt">سکینه براتی هستم </span>.
+                </h2>
+              </div>
+              <div class="ocupation-state">
+                <h2 class="my-ocupation">
+                  <span class="my-ocupation color-txt type"></span>
+                  <div>
+                    ودر حال حاضر مربی آموزش برنامه نویسی به کودکان در
+                    <a
+                      href="https://yasanacademy.ir/"
+                      class="yasna-link color-txt"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >آکادمی یاسان</a
+                    >
+                  </div>
+                </h2>
+              </div>
+              <div class="info">
+                <p class="my-info">
+                  سکینه براتی ، دانشجوی کارشناسی رشته مهندسی کامپیوتر و علاقمند
+                  به یادگیری فرانت اند ، علاقمند به حوزه ی بک اند ، UI/UXو
+                  همینطور علاقمند به دنیای ارزهای دیجیتال
+                </p>
+                <button class="btn color-bg" id="more-info">
+                  درباره من بیشتر بدانید
+                </button>
+              </div>
+            </div>
+            <div class="image section-p1">
+              <img src="../Images/sakine.jpg" alt="" class="my-img" />
+              <div class="before border-color"></div>
+              <div class="after border-color"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- about me part -->
+        <div class="about-me middle section-p1" data-id="about-me">
+          <div class="about-me-container">
+            <div class="title">
+              <h1>درباره من</h1>
+              <div class="beore-title"></div>
+              <div class="after-title"></div>
+            </div>
+            <div class="about-me-name">
+              <h2>سکینه براتی</h2>
+              <spna class="color-txt">توسعه دهنده فرانت اند</spna>
+            </div>
+            <div class="about-me-info">
+              سکینه براتی دانشجوی کارشناسی مهندسی کامپیوتر دانشگاه ازاد اسلامی
+              واحد رودهن علاقمند به برنامه نویسی سایت فرانت اند/ بک اند. مدت
+              یکسال است که مشغول یادگیری مباحث فرانت اند به صورت خوداموز هستم.
+              منابع من برای یادگیری برنامه نویسی سایت های فارسی مانند سون لرن ،
+              مکتب خونه ، تاپ لرن وهمینطور ویدئوی یوتوب است.
+            </div>
+            <div class="personal-info">
+              <div class="infomations">
+                <div class="information-part">
+                  <div class="person-info" id="birthday">
+                    <span class="birthday">تاریخ تولد : </span>
+                    1378/1/1
+                  </div>
+                  <div class="person-info" id="website">
+                    <span class="website">وب سایت : </span>
+                    <a
+                      class="item"
+                      href="
+                file:///E:/Front%20End%20Projects/PortfolioWebsite/Main-Folder/home.html#"
+                      >نمونه کار</a
+                    >
+                  </div>
+                  <div class="person-info" id="degree">
+                    <span class="degree">مدرک تحصیلی</span>
+                    دانشجوی کارشناسی
+                  </div>
+                  <div class="person-info" id="city">
+                    <span class="city">شهر : </span>
+                    تهران
+                  </div>
+                  <div class="person-info" id="age">
+                    <span class="age">سن : </span>
+                    23
+                  </div>
+                  <div class="person-info" id="email">
+                    <span class="email">ایمیل : </span>
+                    baratisakine08@gmail.com
+                  </div>
+                  <div class="person-info" id="phone">
+                    <span class="phone">شماره تماس : </span>
+                    09226958809
+                  </div>
+                  <div class="person-info" id="freelance">
+                    <span class="freelance">فریاینسر : </span>
+                    انجام میشود
+                  </div>
+                </div>
+                <div class="information-btn">
+                  <button class="btn cv-btn color-bg">دانلود رزومه</button>
+                  <button class="btn hire-btn color-bg">استخدام</button>
+                </div>
+              </div>
+              <div class="my-skills">
+                <div class="skill">
+                  <span>html</span>
+                  <div class="bottom-line">
+                    <span class="color-line color-bg html"></span>
+                  </div>
+                </div>
+                <div class="skill">
+                  <span>CSS</span>
+                  <div class="bottom-line">
+                    <span class="color-line color-bg css"></span>
+                  </div>
+                </div>
+                <div class="skill">
+                  <span>javascript</span>
+                  <div class="bottom-line">
+                    <span class="color-line javascript color-bg"></span>
+                  </div>
+                </div>
+                <div class="skill">
+                  <span>react</span>
+                  <div class="bottom-line">
+                    <span class="color-line react color-bg"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="more-info-education-experience">
+              <div class="education">
+                <h2 class="education-title">تحصیلات</h2>
+                <div class="education-content border-color">
+                  <div class="education-txt">
+                    <div class="date-icon">
+                      <ion-icon name="id-card-outline" class="icon"></ion-icon>
+                      <span class="circle color-bg"></span>
+                    </div>
+                    <h3 class="education-txt-title">
+                      کارشناسی مهندسی کامپیوتر
+                    </h3>
+                    <div class="my-education-txt">
+                      <br />
+                      دانشجوی ترم 6 رشته مهندسی کامپیوتر دانشگاه ازاد اسلامی
+                      واحد روهن Lorem ipsum dolor, sit amet consectetur
+                      adipisicing elit. Eum, deleniti!l Lorem ipsum dolor sit
+                      amet consectetur adipisicing elit. Quos tempora enim aut
+                      unde eveniet, totam ipsum ut sequi harum quaerat, ducimus
+                      repellendus inventore at dignissimos? Nihil rerum
+                      laudantium error. Obcaecati. Lorem ipsum dolor sit amet
+                      consectetur adipisicing elit. Nihil alias eligendi qui
+                      libero ullam voluptas fuga consequatur aliquam, mollitia
+                      saepe ex? Laborum explicabo eos aspernatur autem
+                      asperiores velit vero possimus veritatis, error delectus?
+                      Pariatur magni fugit, blanditiis veniam accusantium
+                      expedita officia! Iste pariatur minima illo ea possimus?
+                      Molestias officia magni odio saepe dolorem rem odit
+                      necessitatibus tempore! Odit, sint asperiores quam ratione
+                      ipsum velit consequatur et ullam, minus nihil hic, ab
+                      laudantium quas sed dicta. Nobis, provident expedita
+                      dolor, temporibus sapiente autem consequuntur nihil quo
+                      voluptas vitae enim blanditiis nesciunt nemo! Illo ipsam
+                      natus eos similique provident soluta expedita voluptas!
+                      Laudantium quas suscipit quia, earum corrupti officia,
+                      odit corporis consectetur accusantium recusandae
+                      reiciendis hic officiis, animi dolorum voluptatem illo
+                      quibusdam doloremque quo enim eum? Tenetur aut, cumque
+                      modi laborum voluptates vitae fuga! Excepturi beatae eius
+                      culpa alias quis numquam laudantium et fugit vitae iure
+                      provident accusamus asperiores voluptatibus, voluptas nam
+                      iusto non rem enim ipsam, vero, voluptatem dolores! Enim
+                      architecto sequi hic itaque voluptatibus ducimus, iste
+                      tempora maxime sit accusamus minima quas aperiam, facere,
+                      quo voluptatem sunt ex eum! Obcaecati accusantium dolores
+                      quas quibusdam aut quam nesciunt quidem ea iste rerum.
+                      Officiis totam ipsa eligendi a placeat ex repudiandae
+                      dolorum. Lorem ipsum, dolor sit amet consectetur
+                      adipisicing elit. Aspernatur harum ipsa possimus iure,
+                      facere molestiae sed. Quibusdam eos quis magnam
+                      praesentium vitae, quam, earum animi eum exercitationem
+                      aliquam libero! Magnam eveniet, quod, ratione dolores quas
+                      consequatur error eum voluptas numquam laudantium officia
+                      laboriosam tempore deserunt non amet. Perferendis, neque
+                      autem beatae, porro sed unde nostrum obcaecati ex
+                      excepturi deserunt distinctio provident repudiandae quam
+                      optio deleniti vero asperiores maxime vel voluptatem
+                      quidem. Libero ipsum hic reiciendis iure et. Quo,
+                      molestiae inventore ratione explicabo eligendi molestias
+                      hic architecto! Est magnam commodi dolore aspernatur quo,
+                      delectus deleniti autem placeat cumque voluptates cum
+                      laudantium repudiandae expedita sapiente officiis ipsam
+                      aliquid provident iure ex eveniet quaerat quia ut libero!
+                      Dolor est fuga inventore odio totam assumenda ullam quia
+                      nemo ex iusto ducimus dignissimos doloribus, asperiores
+                      officiis qui id? Porro nulla perferendis, pariatur ducimus
+                      mollitia blanditiis non ipsam est eos odio architecto
+                      maiores qui quas, incidunt enim! Molestias cumque
+                      obcaecati ad voluptates, itaque dolor mollitia nesciunt,
+                      blanditiis tenetur quia, repellat incidunt! Reprehenderit,
+                      obcaecati nam illo inventore necessitatibus impedit, in
+                      corporis voluptates repellendus non culpa voluptatem alias
+                      quasi natus dolores earum ratione ipsum deserunt sapiente
+                      facilis. Eos inventore aliquam quasi tempora blanditiis
+                      commodi consequuntur expedita neque accusamus culpa! Iure
+                      repellat sequi modi, sit mollitia laudantium eius minima
+                      harum incidunt, reiciendis ab amet tempora. Commodi neque
+                      voluptate esse explicabo expedita, cupiditate odit
+                      praesentium unde ea saepe quidem quam, voluptates officiis
+                      magnam sint! Voluptatem totam molestias qui, et aliquid
+                      tenetur nisi perspiciatis excepturi sint quaerat repellat
+                      esse necessitatibus magnam voluptas debitis corrupti rerum
+                      reprehenderit sapiente culpa dolorum consectetur
+                      aspernatur? Porro, minus tempora quas obcaecati laboriosam
+                      sint vitae amet quidem, dignissimos, vel debitis error
+                      natus? Officiis dolores beatae totam, aliquam consectetur
+                      impedit nemo distinctio temporibus corrupti animi
+                      expedita, ducimus maxime, nobis qui iure dolore omnis modi
+                      ut. Iure, saepe a.
+                    </div>
+                  </div>
+                  <div class="education-txt">
+                    <div class="date-icon">
+                      <ion-icon name="id-card-outline" class="icon"></ion-icon>
+                      <span class="circle color-bg"></span>
+                    </div>
+                    <h3 class="education-txt-title">
+                      کارشناسی مهندسی کامپیوتر
+                    </h3>
+                    <div class="my-education-txt">
+                      <br />
+                      دانشجوی ترم 6 رشته مهندسی کامپیوتر دانشگاه ازاد اسلامی
+                      واحد روهن
+                    </div>
+                  </div>
+                  <div class="education-txt">
+                    <div class="date-icon">
+                      <span class="circle color-bg"></span>
+                      <ion-icon name="id-card-outline" class="icon"></ion-icon>
+                    </div>
+                    <h3 class="education-txt-title">
+                      کارشناسی مهندسی کامپیوتر
+                    </h3>
+                    <div class="my-education-txt">
+                      <br />
+                      -- دانشجوی ترم 6 رشته مهندسی کامپیوتر دانشگاه ازاد اسلامی
+                    </div>
+                  </div>
+                  <div class="column-line color-bg"></div>
+                </div>
+              </div>
+              <div class="education">
+                <h2 class="education-title">تحصیلات</h2>
+                <div class="education-content border-color">
+                  <div class="education-txt">
+                    <div class="date-icon">
+                      <ion-icon name="id-card-outline" class="icon"></ion-icon>
+                      <span class="circle color-bg"></span>
+                    </div>
+                    <h3 class="education-txt-title">
+                      کارشناسی مهندسی کامپیوتر
+                    </h3>
+                    <div class="my-education-txt">
+                      <br />
+                      دانشجوی ترم 6 رشته مهندسی کامپیوتر دانشگاه ازاد اسلامی
+                      واحد روهن Lorem ipsum dolor, sit amet consectetur
+                      adipisicing elit. Eum, deleniti!l Lorem ipsum dolor sit
+                      amet consectetur adipisicing elit. Quos tempora enim aut
+                      unde eveniet, totam ipsum ut sequi harum quaerat, ducimus
+                      repellendus inventore at dignissimos? Nihil rerum
+                      laudantium error. Obcaecati. Lorem ipsum dolor sit amet
+                      consectetur adipisicing elit. Nihil alias eligendi qui
+                      libero ullam voluptas fuga consequatur aliquam, mollitia
+                      saepe ex? Laborum explicabo eos aspernatur autem
+                      asperiores velit vero possimus veritatis, error delectus?
+                      Pariatur magni fugit, blanditiis veniam accusantium
+                      expedita officia! Iste pariatur minima illo ea possimus?
+                      Molestias officia magni odio saepe dolorem rem odit
+                      necessitatibus tempore! Odit, sint asperiores quam ratione
+                      ipsum velit consequatur et ullam, minus nihil hic, ab
+                      laudantium quas sed dicta. Nobis, provident expedita
+                      dolor, temporibus sapiente autem consequuntur nihil quo
+                      voluptas vitae enim blanditiis nesciunt nemo! Illo ipsam
+                      natus eos similique provident soluta expedita voluptas!
+                      Laudantium quas suscipit quia, earum corrupti officia,
+                      odit corporis consectetur accusantium recusandae
+                      reiciendis hic officiis, animi dolorum voluptatem illo
+                      quibusdam doloremque quo enim eum? Tenetur aut, cumque
+                      modi laborum voluptates vitae fuga! Excepturi beatae eius
+                      culpa alias quis numquam laudantium et fugit vitae iure
+                      provident accusamus asperiores voluptatibus, voluptas nam
+                      iusto non rem enim ipsam, vero, voluptatem dolores! Enim
+                      architecto sequi hic itaque voluptatibus ducimus, iste
+                      tempora maxime sit accusamus minima quas aperiam, facere,
+                      quo voluptatem sunt ex eum! Obcaecati accusantium dolores
+                      quas quibusdam aut quam nesciunt quidem ea iste rerum.
+                      Officiis totam ipsa eligendi a placeat ex repudiandae
+                      dolorum. Lorem ipsum, dolor sit amet consectetur
+                      adipisicing elit. Aspernatur harum ipsa possimus iure,
+                      facere molestiae sed. Quibusdam eos quis magnam
+                      praesentium vitae, quam, earum animi eum exercitationem
+                      aliquam libero! Magnam eveniet, quod, ratione dolores quas
+                      consequatur error eum voluptas numquam laudantium officia
+                      laboriosam tempore deserunt non amet. Perferendis, neque
+                      autem beatae, porro sed unde nostrum obcaecati ex
+                      excepturi deserunt distinctio provident repudiandae quam
+                      optio deleniti vero asperiores maxime vel voluptatem
+                      quidem. Libero ipsum hic reiciendis iure et. Quo,
+                      molestiae inventore ratione explicabo eligendi molestias
+                      hic architecto! Est magnam commodi dolore aspernatur quo,
+                      delectus deleniti autem placeat cumque voluptates cum
+                      laudantium repudiandae expedita sapiente officiis ipsam
+                      aliquid provident iure ex eveniet quaerat quia ut libero!
+                      Dolor est fuga inventore odio totam assumenda ullam quia
+                      nemo ex iusto ducimus dignissimos doloribus, asperiores
+                      officiis qui id? Porro nulla perferendis, pariatur ducimus
+                      mollitia blanditiis non ipsam est eos odio architecto
+                      maiores qui quas, incidunt enim! Molestias cumque
+                      obcaecati ad voluptates, itaque dolor mollitia nesciunt,
+                      blanditiis tenetur quia, repellat incidunt! Reprehenderit,
+                      obcaecati nam illo inventore necessitatibus impedit, in
+                      corporis voluptates repellendus non culpa voluptatem alias
+                      quasi natus dolores earum ratione ipsum deserunt sapiente
+                      facilis. Eos inventore aliquam quasi tempora blanditiis
+                      commodi consequuntur expedita neque accusamus culpa! Iure
+                      repellat sequi modi, sit mollitia laudantium eius minima
+                      harum incidunt, reiciendis ab amet tempora. Commodi neque
+                      voluptate esse explicabo expedita, cupiditate odit
+                      praesentium unde ea saepe quidem quam, voluptates officiis
+                      magnam sint! Voluptatem totam molestias qui, et aliquid
+                      tenetur nisi perspiciatis excepturi sint quaerat repellat
+                      esse necessitatibus magnam voluptas debitis corrupti rerum
+                      reprehenderit sapiente culpa dolorum consectetur
+                      aspernatur? Porro, minus tempora quas obcaecati laboriosam
+                      sint vitae amet quidem, dignissimos, vel debitis error
+                      natus? Officiis dolores beatae totam, aliquam consectetur
+                      impedit nemo distinctio temporibus corrupti animi
+                      expedita, ducimus maxime, nobis qui iure dolore omnis modi
+                      ut. Iure, saepe a.
+                    </div>
+                  </div>
+                  <div class="education-txt">
+                    <div class="date-icon">
+                      <ion-icon name="id-card-outline" class="icon"></ion-icon>
+                      <span class="circle color-bg"></span>
+                    </div>
+                    <h3 class="education-txt-title">
+                      کارشناسی مهندسی کامپیوتر
+                    </h3>
+                    <div class="my-education-txt">
+                      <br />
+                      دانشجوی ترم 6 رشته مهندسی کامپیوتر دانشگاه ازاد اسلامی
+                      واحد روهن
+                    </div>
+                  </div>
+                  <div class="education-txt">
+                    <div class="date-icon">
+                      <span class="circle color-bg"></span>
+                      <ion-icon name="id-card-outline" class="icon"></ion-icon>
+                    </div>
+                    <h3 class="education-txt-title">
+                      کارشناسی مهندسی کامپیوتر
+                    </h3>
+                    <div class="my-education-txt">
+                      <br />
+                      -- دانشجوی ترم 6 رشته مهندسی کامپیوتر دانشگاه ازاد اسلامی
+                    </div>
+                  </div>
+                  <div class="column-line color-bg"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- services part -->
+        <div class="services middle section-p1" data-id="services">
+          <div class="services-container">
+            <div class="title">
+              <h1>خدمات</h1>
+              <div class="beore-title"></div>
+              <div class="after-title"></div>
+            </div>
+            <div class="carts-sevices">
+              <div class="cart">
+                <div class="cart-icon color-txt">
+                  <ion-icon name="color-palette-outline"></ion-icon>
+                </div>
+                <div class="cart-title">
+                  <h4>Web Design</h4>
+                </div>
+                <div class="cart-txt">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Saepe culpa voluptatem quidem porro dicta autem delectus
+                  assumenda consequatur consectetur optio, tenetur voluptas
+                  suscipit quas voluptates, quae, eveniet repellat nam deserunt
+                  quaerat aliquam quo quisquam cumque. Ipsam, nemo minus.
+                  Ratione, culpa.
+                </div>
+              </div>
+              <div class="cart">
+                <div class="cart-icon color-txt">
+                  <ion-icon name="code-slash-outline"></ion-icon>
+                </div>
+                <div class="cart-title">
+                  <h4>Web Design</h4>
+                </div>
+                <div class="cart-txt">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Saepe culpa voluptatem quidem porro dicta autem delectus
+                  assumenda consequatur consectetur optio, tenetur voluptas
+                  suscipit quas voluptates, quae, eveniet repellat nam deserunt
+                  quaerat aliquam quo quisquam cumque. Ipsam, nemo minus.
+                  Ratione, culpa.
+                </div>
+              </div>
+              <div class="cart">
+                <div class="cart-icon color-txt">
+                  <ion-icon name="desktop-outline"></ion-icon>
+                </div>
+                <div class="cart-title">
+                  <h4>Web Design</h4>
+                </div>
+                <div class="cart-txt">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Saepe culpa voluptatem quidem porro dicta autem delectus
+                  assumenda consequatur consectetur optio, tenetur voluptas
+                  suscipit quas voluptates, quae, eveniet repellat nam deserunt
+                  quaerat aliquam quo quisquam cumque. Ipsam, nemo minus.
+                  Ratione, culpa.
+                </div>
+              </div>
+              <div class="cart">
+                <div class="cart-icon color-txt">
+                  <ion-icon name="megaphone-outline"></ion-icon>
+                </div>
+                <div class="cart-title">
+                  <h4>Web Design</h4>
+                </div>
+                <div class="cart-txt">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Saepe culpa voluptatem quidem porro dicta autem delectus
+                  assumenda consequatur consectetur optio, tenetur voluptas
+                  suscipit quas voluptates, quae, eveniet repellat nam deserunt
+                  quaerat aliquam quo quisquam cumque. Ipsam, nemo minus.
+                  Ratione, culpa.
+                </div>
+              </div>
+              <div class="cart">
+                <div class="cart-icon color-txt">
+                  <ion-icon name="search-outline"></ion-icon>
+                </div>
+                <div class="cart-title">
+                  <h4>Web Design</h4>
+                </div>
+                <div class="cart-txt">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Saepe culpa voluptatem quidem porro dicta autem delectus
+                  assumenda consequatur consectetur optio, tenetur voluptas
+                  suscipit quas voluptates, quae, eveniet repellat nam deserunt
+                  quaerat aliquam quo quisquam cumque. Ipsam, nemo minus.
+                  Ratione, culpa.
+                </div>
+              </div>
+              <div class="cart">
+                <div class="cart-icon color-txt">
+                  <ion-icon name="phone-portrait-outline"></ion-icon>
+                </div>
+                <div class="cart-title">
+                  <h4>Web Design</h4>
+                </div>
+                <div class="cart-txt">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Saepe culpa voluptatem quidem porro dicta autem delectus
+                  assumenda consequatur consectetur optio, tenetur voluptas
+                  suscipit quas voluptates, quae, eveniet repellat nam deserunt
+                  quaerat aliquam quo quisquam cumque. Ipsam, nemo minus.
+                  Ratione, culpa.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- protfolio part -->
+        <div class="portfolio middle section-p1" data-id="portfolio">
+          <div class="portfolio-container">
+            <div class="title">
+              <h1>نمونه کار</h1>
+              <div class="beore-title"></div>
+              <div class="after-title"></div>
+            </div>
+            <h3>نمونه پروژه انجام شده :</h3>
+            <div class="list-projects">
+              <div class="project">
+                <a href="#">
+                  <img src="../Images/photo-1.jpg" alt="" />
+                </a>
+              </div>
+              <div class="project">
+                <a href="#">
+                  <img src="../Images/photo-2.jpg" alt="" />
+                </a>
+              </div>
+              <div class="project">
+                <a href="#">
+                  <img src="../Images/photo-3.jpg" alt="" />
+                </a>
+              </div>
+              <div class="project">
+                <a href="#">
+                  <img src="../Images/photo-4.jpg" alt="" />
+                </a>
+              </div>
+              <div class="project">
+                <a href="#">
+                  <img src="../Images/photo-5.jpeg" alt="" />
+                </a>
+              </div>
+              <div class="project">
+                <a href="#">
+                  <img src="../Images/photo-6.jpeg" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- contact me part -->
+        <div class="contact-me middle section-p1" data-id="contact-me">
+          <div class="contact-me-container">
+            <div class="title">
+              <h1>ارتباط بامن</h1>
+              <div class="beore-title"></div>
+              <div class="after-title"></div>
+            </div>
+            <div class="contatct-me-content">
+              <div class="contact-me-title color-txt">
+                <h1>میتوانید از طریق ایمیل بامن در ارتباط باشید .</h1>
+              </div>
+              <div class="contact-me-info">
+                <div class="phone-number">
+                  <div class="contact-icon color-txt">
+                    <ion-icon name="call"></ion-icon>
+                  </div>
+                  <div class="number">
+                    <span>شماره تماس :</span> 09226958809
+                  </div>
+                </div>
+                <div class="address">
+                  <div class="contact-icon color-txt">
+                    <ion-icon name="location"></ion-icon>
+                  </div>
+                  <div class="location">
+                    <span> آدرس : </span>
+                    تهران ، رودهن
+                  </div>
+                </div>
+                <div class="website">
+                  <div class="contact-icon color-txt">
+                    <ion-icon name="globe"></ion-icon>
+                  </div>
+                  <div class="site"><span> آدرس : </span> آدرس سایت</div>
+                </div>
+                <div class="email-address">
+                  <div class="contact-icon color-txt">
+                    <ion-icon name="mail"></ion-icon>
+                  </div>
+                  <div class="email">
+                    <span> ایمیل : </span>baratisakine08@gmail.com
+                  </div>
+                </div>
+              </div>
+              <div class="send-message">
+                <form
+                  action="#"
+                  id="send-message-form"
+                  class="send-message-form"
+                >
+                  <div class="name-email"send"">
+                    <input
+                     class="send"
+                      type="text"
+                      name="full-name"
+                      id="full-name"
+                      placeholder="نام و نام  خانوادگی"
+                    />
+                    <input
+                     class="send"
+                      type="email"
+                      name="email-address"
+                      id="email-address"
+                      placeholder="آدرس ایمیل"
+                    />
+                  </div>
+                  <input
+                    class="send"
+                    type="text"
+                    name="subject"
+                    id="subject"
+                    placeholder="موضوع"
+                  />
+                  <textarea name="message" id="message" class="send" cols="30" rows="10">
+پیام</textarea
+                  >
+                  <button type="submit" class="btn submit-btn color-bg">
+                    ارسال پیام
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- setting part -->
+        <div class="setting section-p1" id="setting">
+          <div class="icons-setting">
+            <div class="color-options">
+              <ion-icon
+                name="settings-outline"
+                id="color-option"
+                class="item"
+              ></ion-icon>
+            </div>
+            <div class="background-mode" id="background-mode">
+              <ion-icon
+                class="item"
+                name="sunny-outline"
+                id="mode-btn"
+                onclick="changeBackgroundMode()"
+              ></ion-icon>
+            </div>
+          </div>
+          <div class="theme-colors" id="theme-colors">
+            <div class="colors-name">آیتم رنگ</div>
+            <div class="colors">
+              <span class="color" id="color1"></span>
+              <span class="color" id="color2"></span>
+              <span class="color" id="color3"></span>
+              <span class="color" id="color4"></span>
+              <span class="color" id="color5"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- link ion-icons js -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <!-- script js -->
+    <script src="./script.js"></script>
+
+    <!-- typed.js costume link -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!-- typed.js link -->
+    <script src="../Animated-typig-text/typed.js"></script>
+
+    <!-- basic initializations and changes default values -->
+    <script>
+      var typed = new Typed(".type", {
+        strings: [
+          "علاقمند به دنیای فرانت اند/ بک اند",
+          "طراحی سایت UI/UX",
+          "توسعه سایت",
+        ],
+        typeSpeed: 90,
+        backSpeed: 90,
+        loop: true,
+        // smartBackspace: true, // Default value
+      });
+    </script>
+  </body>
+</html>

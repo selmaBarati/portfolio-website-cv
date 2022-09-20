@@ -1,0 +1,89 @@
+.contatct-me-content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.contact-me-info {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    line-height: 40px;
+    gap: 3px;
+}
+
+.contact-icon{
+    font-size: 1.5em;
+}
+
+.send-message {
+    width: 100%;
+}
+
+input,textarea {
+    border: none;
+    outline: none;
+    padding:10px 20px;
+    background-color: rgba(43, 42, 42, 0.4);
+    border-radius: 50px;
+    color: #fff;
+}
+
+input::placeholder,textarea{
+    color: #fff;
+}
+
+textarea {
+    border-radius: 20px;
+    height: 150px;
+}
+
+input::placeholder.active-color {
+    color: rgb(20, 20, 39);
+}
+
+.send-message-form{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.name-email {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+}
+.send {
+    width: 100%;
+}
+
+.submit-btn{
+    width: 20%;
+}
+
+
+/* contact-me part */
+
+@media (max-width:950px) {
+
+.contact-me-info {
+        flex-direction: column;
+    }
+
+.name-email {
+            flex-direction: column;
+          
+        }
+}
+
+@media (max-width: 768px) {
+.submit-btn {
+    width: 50%;
+}
+
+}
